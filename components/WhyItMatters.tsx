@@ -1,56 +1,87 @@
 import Section from "./ui/Section";
-import Placeholder from "./ui/Placeholder";
+import ScrollArt from "./ui/ScrollArt";
 
 export default function WhyItMatters() {
   return (
-    <Section id="why" tone="white">
+    <Section id="why" tone="white" className="py-24 sm:py-32">
       <div className="reveal mx-auto max-w-3xl text-center">
-        <p className="text-xs uppercase tracking-[0.22em] text-mahogany">
-          Why It Matters
+        <p className="text-[11px] uppercase tracking-[0.24em] text-mahogany">
+          The Hidden Problem
         </p>
-        <h2 className="h-display mt-4 text-3xl text-ink sm:text-4xl lg:text-5xl">
-          A mezuzah can become invalid without you ever noticing.
+        <h2 className="h-display mt-5 text-[2.1rem] leading-[1.08] text-ink sm:text-[2.6rem] lg:text-[3.3rem]">
+          A mezuzah can become invalid
+          <br />
+          <em className="italic text-forest">without you ever noticing.</em>
         </h2>
-        <p className="mt-6 text-base leading-relaxed text-ink/70 sm:text-lg">
-          A mezuzah can look perfectly fine from the outside, while the scroll
-          inside may have faded ink, cracked letters, moisture damage, or
-          age-related wear. That is why Jewish law requires the scroll itself
-          to be checked by a qualified Sofer STaM — not just looked at from
-          the outside.
+        <p className="mx-auto mt-7 max-w-2xl text-[17px] leading-relaxed text-ink/70">
+          The case on your doorpost can look perfectly fine, while the scroll
+          inside has faded ink, cracked letters, moisture damage, or
+          age-related wear. Halacha requires the scroll itself to be inspected
+          by a qualified Sofer STaM — not just glanced at from the outside.
         </p>
       </div>
 
-      <div className="reveal mt-14 grid gap-6 sm:grid-cols-2">
-        <div className="rounded-2xl border border-line bg-cream/50 p-6">
-          <Placeholder
-            label="A mezuzah case on a doorpost"
-            ratio="landscape"
-            tone="warm"
-          />
-          <p className="mt-5 text-[11px] uppercase tracking-[0.18em] text-mahogany">
-            Outside
-          </p>
-          <p className="mt-2 text-lg text-ink">Looks fine.</p>
-          <p className="mt-1 text-sm text-ink/60">
-            A mezuzah on the doorpost — what the family sees every day.
-          </p>
+      <div className="reveal mt-16 grid gap-5 lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-6">
+        {/* Outside */}
+        <article className="group relative">
+          <div className="overflow-hidden rounded-3xl border border-line bg-cream/40 transition group-hover:shadow-xl">
+            <ScrollArt
+              variant="doorway"
+              label="Mezuzah on the doorpost — what the family sees"
+              ratio="landscape"
+              className="rounded-none border-0"
+            />
+            <div className="p-7">
+              <p className="text-[10px] uppercase tracking-[0.22em] text-mahogany">
+                What you see
+              </p>
+              <p className="h-display mt-2 text-2xl text-ink">Looks fine.</p>
+              <p className="mt-2 text-sm leading-relaxed text-ink/60">
+                The case on the doorpost — the same view your family sees every
+                time they walk in.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        {/* Divider arrow */}
+        <div className="flex items-center justify-center lg:flex-col">
+          <div className="hidden h-px w-12 bg-line lg:block" />
+          <div className="rounded-full border border-line bg-cream px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-mahogany">
+            vs.
+          </div>
+          <div className="hidden h-px w-12 bg-line lg:block" />
         </div>
-        <div className="rounded-2xl border border-line bg-cream/50 p-6">
-          <Placeholder
-            label="Close-up of mezuzah scroll letters being inspected"
-            ratio="landscape"
-            tone="warm"
-          />
-          <p className="mt-5 text-[11px] uppercase tracking-[0.18em] text-mahogany">
-            Inside
-          </p>
-          <p className="mt-2 text-lg text-ink">Must be checked.</p>
-          <p className="mt-1 text-sm text-ink/60">
-            What the Sofer examines — letters, ink, parchment, spacing, order,
-            condition.
-          </p>
-        </div>
+
+        {/* Inside */}
+        <article className="group relative">
+          <div className="overflow-hidden rounded-3xl border border-line bg-cream/40 transition group-hover:shadow-xl">
+            <ScrollArt
+              variant="scroll"
+              label="The scroll inside — what the Sofer inspects"
+              ratio="landscape"
+              className="rounded-none border-0"
+            />
+            <div className="p-7">
+              <p className="text-[10px] uppercase tracking-[0.22em] text-mahogany">
+                What the Sofer checks
+              </p>
+              <p className="h-display mt-2 text-2xl text-ink">
+                Must be opened.
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-ink/60">
+                Letters, ink, parchment, spacing, halachic order, and overall
+                condition — examined letter by letter.
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
+
+      {/* Quiet halachic note */}
+      <p className="reveal mx-auto mt-12 max-w-2xl text-center text-xs uppercase tracking-[0.2em] text-mahogany/70">
+        Inspecting the scroll itself is the only way to determine kosher status.
+      </p>
     </Section>
   );
 }
