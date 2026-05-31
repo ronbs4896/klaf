@@ -12,7 +12,7 @@ export default function PullQuote() {
             “
           </span>
           <blockquote className="h-display text-[1.55rem] leading-[1.3] text-ink sm:text-[2rem] lg:text-[2.4rem]">
-            Most people hang a mezuzah with their whole heart — and then never
+            Most people hang a mezuzah with their whole heart, and then never
             think about it again. That&apos;s exactly why we built Klaf Project.
           </blockquote>
           <span

@@ -4,7 +4,7 @@ const services = [
   {
     emoji: "🔍",
     title: "Inspection",
-    body: "Full examination of every mezuzah in your home by a certified sofer — at your door, at no cost to you.",
+    body: "Full examination of every mezuzah in your home by a certified sofer, at your door, at no cost to you.",
     link: { label: "Learn more", href: "#how" },
   },
   {

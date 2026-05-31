@@ -35,7 +35,7 @@ export default function FinalCTA() {
           </h2>
           <p className="mt-7 max-w-md text-[17px] leading-relaxed text-cream/80">
             Klaf Project is a nonprofit initiative. We come to you, we check,
-            we repair — and there is nothing to pay.
+            we repair, and there is nothing to pay.
           </p>
 
           <ul className="mt-8 space-y-3">

@@ -21,7 +21,7 @@ export default function DonateCTA() {
             </h2>
             <p className="mt-6 max-w-md text-[16px] leading-relaxed text-ink/70">
               If this visit touched you and you&apos;d like to help carry the
-              project forward, donations to our nonprofit are always welcome —
+              project forward, donations to our nonprofit are always welcome,
               and deeply appreciated.
             </p>
           </div>

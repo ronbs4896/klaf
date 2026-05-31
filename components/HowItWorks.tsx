@@ -4,12 +4,12 @@ const steps = [
   {
     n: "01",
     title: "Book a home visit",
-    body: "Pick a time that works for you. Our sofer comes to your home — apartment, house, or office.",
+    body: "Pick a time that works for you. Our sofer comes to your home: apartment, house, or office.",
   },
   {
     n: "02",
     title: "On-the-spot inspection",
-    body: "He carefully removes each mezuzah and examines the scroll right there with you — no mystery, no waiting room.",
+    body: "He carefully removes each mezuzah and examines the scroll right there with you. No mystery, no waiting room.",
   },
   {
     n: "03",
@@ -18,8 +18,8 @@ const steps = [
   },
   {
     n: "04",
-    title: "If it needs more — we handle it",
-    body: "For scrolls that need deeper restoration, he takes it, has it repaired by our scriptorium, and returns it to your door — good as new.",
+    title: "If it needs more, we handle it",
+    body: "For scrolls that need deeper restoration, he takes it, has it repaired by our scriptorium, and returns it to your door, good as new.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function HowItWorks() {
         <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-ink/70">
           No errands. No taking mezuzot down yourself. No shipping. Our
           certified scribe visits you, checks everything on the spot, and
-          handles whatever is needed — right there at your door.
+          handles whatever is needed, right there at your door.
         </p>
       </div>
 

@@ -31,13 +31,13 @@ export default function Hero() {
             </p>
 
             <h1 className="h-display text-[2.6rem] leading-[1.04] text-ink sm:text-5xl lg:text-[4rem]">
-              Your mezuzah watches over you{" "}
-              <span className="text-forest">— let us watch over it.</span>
+              Your mezuzah watches over you.{" "}
+              <span className="text-forest">Let us watch over it.</span>
             </h1>
 
             <p className="mt-7 max-w-xl text-[17px] leading-relaxed text-ink/75">
               A certified scribe comes to your home, checks every mezuzah on the
-              spot, and fixes what can be fixed — right there at your door. No
+              spot, and fixes what can be fixed, right there at your door. No
               errands, no waiting, and no cost.
             </p>
 

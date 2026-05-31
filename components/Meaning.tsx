@@ -4,17 +4,17 @@ const cards = [
   {
     emoji: "📜",
     title: "A hand-written scroll",
-    body: "Each mezuzah contains a klaf — parchment inscribed by a trained scribe (sofer). The letters must be perfect; even one damaged letter affects its validity.",
+    body: "Each mezuzah contains a klaf, parchment inscribed by a trained scribe (sofer). The letters must be perfect; even one damaged letter affects its validity.",
   },
   {
     emoji: "☀️",
     title: "Time and weather take their toll",
-    body: "A mezuzah on an outdoor doorpost is exposed to heat, humidity, and rain year-round. Over time, the ink can crack and the parchment fade — silently, invisibly.",
+    body: "A mezuzah on an outdoor doorpost is exposed to heat, humidity, and rain year-round. Over time, the ink can crack and the parchment fade. Silently, invisibly.",
   },
   {
     emoji: "🏠",
     title: "Checking it is an act of care",
-    body: "Having your mezuzah checked isn't a religious formality — it's how you honor the intention you had when you put it up.",
+    body: "Having your mezuzah checked isn't a religious formality. It's how you honor the intention you had when you put it up.",
   },
 ];
 
@@ -32,7 +32,7 @@ export default function Meaning() {
 
       <div className="reveal mx-auto mt-10 grid max-w-3xl gap-5 text-[17px] leading-relaxed text-ink/75">
         <p>
-          It isn&apos;t just tradition. The mezuzah is a living connection — a
+          It isn&apos;t just tradition. The mezuzah is a living connection: a
           small scroll hand-written by a scribe, containing the Shema, placed
           at the threshold of every Jewish home for thousands of years.
         </p>
@@ -44,7 +44,7 @@ export default function Meaning() {
         </p>
         <p>
           In Jewish tradition, the mezuzah is understood as a form of divine
-          protection — a presence that accompanies every entry and exit. It
+          protection: a presence that accompanies every entry and exit. It
           reminds us, quietly, of what we hold dear each time we walk through
           the door.
         </p>

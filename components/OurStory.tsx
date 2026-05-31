@@ -50,8 +50,8 @@ export default function OurStory() {
               yours?
             </p>
             <p>
-              We noticed that checking a mezuzah — despite being one of the
-              most meaningful things you can do for your home — had become
+              We noticed that checking a mezuzah, despite being one of the
+              most meaningful things you can do for your home, had become
               almost impossible for most families. You had to take it down,
               find a scribe, travel across town, wait weeks, and figure out
               how to put it back. For most people, that meant: never.
@@ -63,7 +63,7 @@ export default function OurStory() {
             </p>
             <p>
               Klaf Project isn&apos;t about religion or obligation. It&apos;s
-              about honoring what you already believe in — and making it easy
+              about honoring what you already believe in, and making it easy
               to do so.
             </p>
           </div>

@@ -42,7 +42,7 @@ export default function Footer() {
             </p>
             <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-ink/65">
               Bringing one of Judaism&apos;s most beautiful traditions back to
-              life — simply, warmly, and for every home.
+              life. Simply, warmly, and for every home.
             </p>
             <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-mahogany/15 bg-white/70 py-1 pl-1 pr-3 text-[10px] uppercase tracking-[0.18em] text-mahogany">
               <span className="rounded-full bg-mahogany px-2 py-0.5 text-cream">

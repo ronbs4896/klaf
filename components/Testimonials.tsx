@@ -16,7 +16,7 @@ export default function Testimonials() {
             <blockquote className="h-display mx-auto max-w-3xl text-[1.55rem] leading-[1.32] text-ink sm:text-[1.95rem]">
               I hadn&apos;t thought about our mezuzah in fifteen years. When
               Klaf Project sent back the report, I felt something I
-              didn&apos;t expect — like I&apos;d reconnected with something I&apos;d
+              didn&apos;t expect. Like I&apos;d reconnected with something I&apos;d
               been quietly carrying the whole time.
             </blockquote>
 
