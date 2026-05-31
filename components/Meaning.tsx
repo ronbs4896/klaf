@@ -2,17 +2,14 @@ import Section from "./ui/Section";
 
 const cards = [
   {
-    emoji: "📜",
     title: "A hand-written scroll",
     body: "Each mezuzah contains a klaf, parchment inscribed by a trained scribe (sofer). The letters must be perfect; even one damaged letter affects its validity.",
   },
   {
-    emoji: "☀️",
     title: "Time and weather take their toll",
     body: "A mezuzah on an outdoor doorpost is exposed to heat, humidity, and rain year-round. Over time, the ink can crack and the parchment fade. Silently, invisibly.",
   },
   {
-    emoji: "🏠",
     title: "Checking it is an act of care",
     body: "Having your mezuzah checked isn't a religious formality. It's how you honor the intention you had when you put it up.",
   },
@@ -51,15 +48,18 @@ export default function Meaning() {
       </div>
 
       <ul className="reveal mt-16 grid gap-5 md:grid-cols-3">
-        {cards.map((card) => (
+        {cards.map((card, i) => (
           <li
             key={card.title}
             className="group rounded-3xl border border-line bg-white p-7 transition hover:-translate-y-1 hover:shadow-xl"
           >
-            <span className="block text-3xl" role="img" aria-label={card.title}>
-              {card.emoji}
-            </span>
-            <h3 className="h-display mt-5 text-lg text-ink">{card.title}</h3>
+            <div className="flex items-baseline justify-between">
+              <span className="h-display text-3xl leading-none text-gold">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="h-px w-12 bg-line" />
+            </div>
+            <h3 className="h-display mt-6 text-lg text-ink">{card.title}</h3>
             <p className="mt-3 text-[14px] leading-relaxed text-ink/65">
               {card.body}
             </p>
