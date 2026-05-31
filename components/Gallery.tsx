@@ -43,9 +43,9 @@ export default function Gallery() {
           Gallery
         </p>
         <h2 className="h-display mt-5 text-[2.1rem] leading-[1.08] text-ink sm:text-[2.6rem] lg:text-[3.3rem]">
-          Real visits. Real scrolls.
+          Door by door,
           <br />
-          <em className="italic text-forest">Real homes.</em>
+          <em className="italic text-forest">scroll by scroll</em>
         </h2>
       </div>
 
