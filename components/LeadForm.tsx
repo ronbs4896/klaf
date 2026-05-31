@@ -6,9 +6,9 @@ import { useRouter } from "next/navigation";
 type Status = "idle" | "submitting" | "error";
 
 const inputClass =
-  "w-full rounded-lg border border-cream/20 bg-cream/10 px-4 py-3 text-sm text-cream placeholder:text-cream/50 focus:border-gold focus:bg-cream/15 focus:outline-none focus:ring-1 focus:ring-gold";
+  "w-full rounded-lg border border-line bg-cream/40 px-4 py-3 text-sm text-ink placeholder:text-ink/35 focus:border-forest/40 focus:bg-white focus:outline-none focus:ring-1 focus:ring-forest/30";
 const labelClass =
-  "mb-1.5 block text-[11px] uppercase tracking-[0.18em] text-cream/70";
+  "mb-1.5 block text-[11px] uppercase tracking-[0.18em] text-mahogany";
 
 export default function LeadForm() {
   const router = useRouter();
@@ -39,7 +39,7 @@ export default function LeadForm() {
   return (
     <form
       onSubmit={onSubmit}
-      className="rounded-2xl border border-cream/15 bg-cream/[0.05] p-6 sm:p-8"
+      className="rounded-2xl border border-line bg-white p-6 shadow-[0_30px_80px_-40px_rgba(91,70,54,0.25)] sm:p-8"
       noValidate
     >
       <div className="grid gap-4 sm:grid-cols-2">
@@ -156,16 +156,16 @@ export default function LeadForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-gold px-6 py-3.5 text-sm font-medium text-mahogany transition hover:bg-gold/90 disabled:opacity-60 sm:w-auto"
+        className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-forest px-6 py-3.5 text-sm font-medium text-cream transition hover:bg-forest-hover disabled:opacity-60 sm:w-auto"
       >
         {status === "submitting" ? "Sending…" : "Request My Free Visit"}
       </button>
 
       {error && (
-        <p className="mt-3 text-sm text-amber-200">{error}</p>
+        <p className="mt-3 text-sm text-red-600">{error}</p>
       )}
 
-      <p className="mt-4 text-xs text-cream/55">
+      <p className="mt-4 text-xs text-ink/50">
         No payment required. No obligation. We&apos;ll contact you before
         scheduling anything.
       </p>
