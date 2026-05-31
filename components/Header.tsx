@@ -5,10 +5,10 @@ import { useState } from "react";
 import { ButtonLink } from "./ui/Button";
 
 const navLinks = [
+  { href: "#meaning", label: "Why Mezuzah" },
   { href: "#how", label: "How It Works" },
-  { href: "#sofer", label: "Meet the Sofer" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#story", label: "Our Story" },
+  { href: "#services", label: "Services" },
 ];
 
 export default function Header() {
@@ -17,10 +17,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/70 bg-cream/85 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-        <Link href="/" className="flex items-baseline gap-2">
-          <span className="h-display text-2xl text-forest">Klaf</span>
-          <span className="hidden text-xs uppercase tracking-[0.18em] text-mahogany sm:inline">
-            Free Mezuzah Inspection Project
+        <Link href="/" className="flex items-baseline gap-3">
+          <span className="h-display text-xl tracking-tight text-forest sm:text-2xl">
+            Klaf<span className="mx-0.5 text-gold">·</span>Project
+          </span>
+          <span className="hidden text-[11px] uppercase tracking-[0.2em] text-mahogany sm:inline">
+            A nonprofit initiative
           </span>
         </Link>
 
@@ -37,8 +39,8 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <ButtonLink href="#request" className="px-5 py-2.5 text-sm">
-            Request a Free Visit
+          <ButtonLink href="#book" className="px-5 py-2.5 text-sm">
+            Book a Visit
           </ButtonLink>
         </div>
 
@@ -73,12 +75,8 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <ButtonLink
-              href="#request"
-              className="mt-2"
-              variant="primary"
-            >
-              Request a Free Visit
+            <ButtonLink href="#book" className="mt-2" variant="primary">
+              Book a Visit
             </ButtonLink>
           </nav>
         </div>

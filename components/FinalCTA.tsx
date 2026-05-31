@@ -2,14 +2,18 @@ import Section from "./ui/Section";
 import LeadForm from "./LeadForm";
 
 const reassurance = [
-  "No payment required",
-  "No obligation",
-  "We'll contact you first",
+  "Free home visit",
+  "Most repairs done on the spot",
+  "No payment. No catch.",
 ];
 
 export default function FinalCTA() {
   return (
-    <Section id="request" tone="mahogany" className="relative overflow-hidden py-24 sm:py-32">
+    <Section
+      id="book"
+      tone="mahogany"
+      className="relative overflow-hidden py-24 sm:py-32"
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute -top-32 right-[-10%] h-96 w-96 rounded-full bg-gold/15 blur-3xl"
@@ -22,16 +26,16 @@ export default function FinalCTA() {
       <div className="relative grid gap-12 lg:grid-cols-[1fr_1.05fr] lg:items-center lg:gap-16">
         <div className="reveal">
           <p className="text-[11px] uppercase tracking-[0.24em] text-gold">
-            Request a Visit
+            Book a Visit
           </p>
           <h2 className="h-display mt-5 text-[2.1rem] leading-[1.06] text-cream sm:text-[2.6rem] lg:text-[3.3rem]">
-            Bring a certified Sofer
+            A scribe at your door.
             <br />
-            <em className="italic text-gold">to your door. Free.</em>
+            <span className="text-gold">No charge, no catch.</span>
           </h2>
           <p className="mt-7 max-w-md text-[17px] leading-relaxed text-cream/80">
-            Submit your request and we&apos;ll be in touch within a day or two
-            to schedule a convenient time.
+            Klaf Project is a nonprofit initiative. We come to you, we check,
+            we repair — and there is nothing to pay.
           </p>
 
           <ul className="mt-8 space-y-3">
@@ -47,16 +51,6 @@ export default function FinalCTA() {
               </li>
             ))}
           </ul>
-
-          <div className="mt-10 hidden rounded-2xl border border-cream/15 bg-cream/[0.04] p-5 backdrop-blur sm:block">
-            <p className="text-[10px] uppercase tracking-[0.22em] text-gold">
-              Direct line
-            </p>
-            <p className="mt-1 text-base text-cream">
-              Prefer to call? Leave your number — the Sofer will reach out
-              directly.
-            </p>
-          </div>
         </div>
 
         <div className="reveal">

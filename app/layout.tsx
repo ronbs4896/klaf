@@ -9,13 +9,13 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Klaf — Free Mezuzah Inspection by a Certified Sofer",
+  title: "Klaf·Project — A scribe at your door. No charge, no catch.",
   description:
-    "A certified Sofer STaM comes to your home and inspects every mezuzah scroll. The visit is free. No pressure, no obligation.",
+    "A certified scribe comes to your home, checks every mezuzah on the spot, and fixes what can be fixed — right there at your door. A nonprofit initiative.",
   openGraph: {
-    title: "Klaf — Free Mezuzah Inspection",
+    title: "Klaf·Project — A scribe at your door",
     description:
-      "A certified Sofer STaM comes to your home and inspects every mezuzah scroll. Free visit.",
+      "Your mezuzah watches over you — let us watch over it. Free home visits by a certified scribe.",
     type: "website",
   },
 };

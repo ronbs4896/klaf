@@ -1,17 +1,14 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import WhyItMatters from "@/components/WhyItMatters";
-import Stat from "@/components/Stat";
+import PullQuote from "@/components/PullQuote";
+import Meaning from "@/components/Meaning";
 import HowItWorks from "@/components/HowItWorks";
-import MeetTheSofer from "@/components/MeetTheSofer";
-import WhatWeCheck from "@/components/WhatWeCheck";
-import IfNeedsReplacement from "@/components/IfNeedsReplacement";
+import OurStory from "@/components/OurStory";
+import Services from "@/components/Services";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
-import OurMezuzot from "@/components/OurMezuzot";
-import ProjectModel from "@/components/ProjectModel";
-import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
+import DonateCTA from "@/components/DonateCTA";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import RevealOnScroll from "@/components/RevealOnScroll";
@@ -22,18 +19,15 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <WhyItMatters />
-        <Stat />
+        <PullQuote />
+        <Meaning />
         <HowItWorks />
-        <MeetTheSofer />
-        <WhatWeCheck />
-        <IfNeedsReplacement />
+        <OurStory />
+        <Services />
         <Gallery />
         <Testimonials />
-        <OurMezuzot />
-        <ProjectModel />
-        <FAQ />
         <FinalCTA />
+        <DonateCTA />
       </main>
       <Footer />
       <StickyMobileCTA />

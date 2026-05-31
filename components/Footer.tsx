@@ -3,26 +3,30 @@ import Container from "./ui/Container";
 
 const linkGroups = [
   {
-    title: "Project",
+    title: "Learn",
     links: [
-      { href: "#how", label: "How It Works" },
-      { href: "#sofer", label: "Meet the Sofer" },
-      { href: "#testimonials", label: "Testimonials" },
+      { href: "#meaning", label: "Why mezuzah?" },
+      { href: "#meaning", label: "What is a klaf?" },
+      { href: "#how", label: "How to hang one" },
       { href: "#faq", label: "FAQ" },
     ],
   },
   {
-    title: "Action",
+    title: "Services",
     links: [
-      { href: "#request", label: "Request a Visit" },
-      { href: "mailto:hello@klaf.org", label: "Contact" },
+      { href: "#book", label: "Book a free visit" },
+      { href: "#services", label: "Inspection" },
+      { href: "#services", label: "Repair" },
+      { href: "#donate", label: "Donate ✦" },
     ],
   },
   {
-    title: "Legal",
+    title: "Company",
     links: [
-      { href: "/privacy", label: "Privacy Policy" },
-      { href: "/terms", label: "Terms" },
+      { href: "#story", label: "Our story" },
+      { href: "#story", label: "Our scribes" },
+      { href: "mailto:hello@klafproject.org", label: "Contact" },
+      { href: "https://instagram.com", label: "Instagram" },
     ],
   },
 ];
@@ -33,16 +37,18 @@ export default function Footer() {
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           <div>
-            <p className="h-display text-4xl text-forest">Klaf</p>
-            <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-ink/65">
-              Helping Jewish families across the United States make sure every
-              mezuzah is properly checked by a certified Sofer STaM.
+            <p className="h-display text-3xl text-forest sm:text-4xl">
+              Klaf<span className="mx-0.5 text-gold">·</span>Project
+            </p>
+            <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-ink/65">
+              Bringing one of Judaism&apos;s most beautiful traditions back to
+              life — simply, warmly, and for every home.
             </p>
             <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-mahogany/15 bg-white/70 py-1 pl-1 pr-3 text-[10px] uppercase tracking-[0.18em] text-mahogany">
               <span className="rounded-full bg-mahogany px-2 py-0.5 text-cream">
-                Community
+                Nonprofit
               </span>
-              Mitzvah project
+              Community funded
             </p>
           </div>
           <div className="grid gap-8 sm:grid-cols-3">
@@ -53,7 +59,7 @@ export default function Footer() {
                 </p>
                 <ul className="mt-4 space-y-2.5">
                   {group.links.map((link) => (
-                    <li key={link.href}>
+                    <li key={`${group.title}-${link.label}`}>
                       <Link
                         href={link.href}
                         className="text-sm text-ink/70 transition hover:text-ink"
@@ -69,8 +75,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-line pt-6 text-xs text-ink/55 sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} Klaf. A community mitzvah project.</p>
-          <p>Made with care for Jewish homes across the United States.</p>
+          <p>© {new Date().getFullYear()} Klaf Project. All rights reserved.</p>
+          <p>Made with care in Israel.</p>
         </div>
       </Container>
     </footer>
