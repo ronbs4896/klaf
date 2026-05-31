@@ -2,19 +2,16 @@ import Section from "./ui/Section";
 
 const services = [
   {
-    emoji: "🔍",
     title: "Inspection",
     body: "Full examination of every mezuzah in your home by a certified sofer, at your door, at no cost to you.",
     link: { label: "Learn more", href: "#how" },
   },
   {
-    emoji: "✍️",
     title: "On-the-spot Repair",
     body: "If a scroll can be restored, the scribe does it right there. If it needs deeper work, he handles the whole process and returns it to you.",
     link: { label: "Learn more", href: "#how" },
   },
   {
-    emoji: "🤍",
     title: "Support the Project",
     body: "Everything is free because of donors who believe in this mission. If you'd like to give back, donations go directly to the nonprofit.",
     link: { label: "Donate", href: "#donate" },
@@ -34,14 +31,17 @@ export default function Services() {
       </div>
 
       <ul className="reveal mt-14 grid gap-5 md:grid-cols-3">
-        {services.map((svc) => (
+        {services.map((svc, i) => (
           <li
             key={svc.title}
             className="group flex flex-col rounded-3xl border border-line bg-cream/40 p-8 transition hover:-translate-y-1 hover:bg-white hover:shadow-xl"
           >
-            <span className="block text-3xl" role="img" aria-label={svc.title}>
-              {svc.emoji}
-            </span>
+            <div className="flex items-baseline justify-between">
+              <span className="h-display text-3xl leading-none text-gold">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="h-px w-12 bg-line" />
+            </div>
             <h3 className="h-display mt-6 text-xl text-ink">{svc.title}</h3>
             <p className="mt-3 flex-1 text-[14px] leading-relaxed text-ink/65">
               {svc.body}
