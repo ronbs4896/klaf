@@ -38,9 +38,9 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           <div>
             <img
-              src="/gallery/logo%20white%20background.png"
+              src="/gallery/logo_dark_background-removebg-preview.png"
               alt="Klaf Project"
-              className="h-14 w-auto mix-blend-multiply sm:h-16"
+              className="h-14 w-auto sm:h-16"
             />
             <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-ink/65">
               Bringing one of Judaism&apos;s most beautiful traditions back to
