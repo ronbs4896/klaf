@@ -19,9 +19,9 @@ export default function Header() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <Link href="/" className="flex items-center gap-3">
           <img
-            src="/gallery/logo%20white%20background.png"
+            src="/gallery/logo_dark_background-removebg-preview.png"
             alt="Klaf Project"
-            className="h-8 w-auto mix-blend-multiply sm:h-10"
+            className="h-8 w-auto sm:h-10"
           />
           <span className="hidden text-[11px] uppercase tracking-[0.2em] text-forest sm:inline">
             A nonprofit initiative
