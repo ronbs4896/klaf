@@ -20,7 +20,7 @@ const services = [
 
 export default function Services() {
   return (
-    <Section id="services" tone="white" className="py-24 sm:py-32">
+    <Section id="services" tone="white" className="py-16 sm:py-20">
       <div className="reveal mx-auto max-w-3xl">
         <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
           What we offer

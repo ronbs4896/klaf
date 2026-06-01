@@ -30,7 +30,7 @@ const credentials = [
 
 export default function About() {
   return (
-    <Section id="about" tone="white" className="py-24 sm:py-32">
+    <Section id="about" tone="white" className="py-16 sm:py-20">
       <div className="grid items-center gap-14 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
         <div className="reveal relative">
           <div className="relative overflow-hidden rounded-3xl border border-line bg-cream shadow-[0_50px_120px_-40px_rgba(91,58,34,0.4)]">

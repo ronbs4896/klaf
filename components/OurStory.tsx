@@ -3,7 +3,7 @@ import ScrollArt from "./ui/ScrollArt";
 
 export default function OurStory() {
   return (
-    <Section id="story" tone="cream" className="py-24 sm:py-32">
+    <Section id="story" tone="cream" className="py-16 sm:py-20">
       <div className="reveal mx-auto max-w-3xl text-center">
         <figure>
           <p className="h-display text-[1.55rem] leading-[1.3] text-ink sm:text-[1.9rem] lg:text-[2.2rem]">
@@ -13,7 +13,7 @@ export default function OurStory() {
         </figure>
       </div>
 
-      <div className="mt-16 grid items-start gap-14 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
+      <div className="mt-12 grid items-start gap-14 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
         <div className="reveal relative">
           <div
             aria-hidden

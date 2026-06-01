@@ -12,7 +12,7 @@ export default function FinalCTA() {
     <Section
       id="book"
       tone="cream"
-      className="relative overflow-hidden py-24 sm:py-32"
+      className="relative overflow-hidden py-16 sm:py-20"
     >
       <div
         aria-hidden
