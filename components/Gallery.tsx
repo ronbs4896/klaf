@@ -39,7 +39,7 @@ export default function Gallery() {
   return (
     <Section tone="white" className="py-24 sm:py-32">
       <div className="reveal mx-auto max-w-3xl text-center">
-        <p className="text-[11px] uppercase tracking-[0.24em] text-mahogany">
+        <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
           Gallery
         </p>
         <h2 className="h-display mt-5 text-[2.1rem] leading-[1.08] text-ink sm:text-[2.6rem] lg:text-[3.3rem]">

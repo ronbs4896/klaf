@@ -23,7 +23,7 @@ export default function Hero() {
       <Container className="relative">
         <div className="grid items-center gap-14 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
           <div className="fade-in-up">
-            <p className="mb-7 inline-flex items-center gap-2 rounded-full border border-mahogany/15 bg-white/70 py-1.5 pl-1.5 pr-4 text-[11px] uppercase tracking-[0.2em] text-mahogany backdrop-blur">
+            <p className="mb-7 inline-flex items-center gap-2 rounded-full border border-forest/15 bg-white/70 py-1.5 pl-1.5 pr-4 text-[11px] uppercase tracking-[0.2em] text-forest backdrop-blur">
               <span className="rounded-full bg-mahogany px-2 py-0.5 text-[10px] tracking-[0.15em] text-cream">
                 Klaf·Project
               </span>
@@ -83,7 +83,7 @@ export default function Hero() {
             </div>
 
             <div className="absolute -left-4 bottom-8 hidden w-[240px] rounded-2xl border border-line bg-white/95 p-4 shadow-xl backdrop-blur sm:block">
-              <p className="text-[10px] uppercase tracking-[0.2em] text-mahogany">
+              <p className="text-[10px] uppercase tracking-[0.2em] text-forest">
                 Today
               </p>
               <p className="mt-1.5 text-[15px] font-medium leading-snug text-ink">
@@ -103,7 +103,7 @@ export default function Hero() {
 
             <div className="absolute -right-3 top-6 hidden rotate-3 rounded-xl border border-line bg-cream/95 px-4 py-3 shadow-lg backdrop-blur md:block">
               <p className="h-display text-2xl text-forest">$0</p>
-              <p className="text-[10px] uppercase tracking-[0.18em] text-mahogany">
+              <p className="text-[10px] uppercase tracking-[0.18em] text-forest">
                 Every visit
               </p>
             </div>

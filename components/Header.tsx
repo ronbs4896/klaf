@@ -21,7 +21,7 @@ export default function Header() {
           <span className="h-display text-xl tracking-tight text-forest sm:text-2xl">
             Klaf<span className="mx-0.5 text-gold">·</span>Project
           </span>
-          <span className="hidden text-[11px] uppercase tracking-[0.2em] text-mahogany sm:inline">
+          <span className="hidden text-[11px] uppercase tracking-[0.2em] text-forest sm:inline">
             A nonprofit initiative
           </span>
         </Link>

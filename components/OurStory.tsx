@@ -29,7 +29,7 @@ export default function OurStory() {
           </div>
 
           <div className="absolute -right-3 top-8 hidden rotate-[-2deg] rounded-2xl border border-line bg-cream/95 px-4 py-3 shadow-lg backdrop-blur md:block">
-            <p className="text-[10px] uppercase tracking-[0.18em] text-mahogany">
+            <p className="text-[10px] uppercase tracking-[0.18em] text-forest">
               Since 2024
             </p>
             <p className="h-display mt-1 text-base text-ink">2,000+ visits</p>
@@ -37,7 +37,7 @@ export default function OurStory() {
         </div>
 
         <div className="reveal">
-          <p className="text-[11px] uppercase tracking-[0.24em] text-mahogany">
+          <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
             Where we began
           </p>
           <h2 className="h-display mt-5 text-[2.1rem] leading-[1.08] text-ink sm:text-[2.6rem] lg:text-[3rem]">

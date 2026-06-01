@@ -8,7 +8,7 @@ type Status = "idle" | "submitting" | "error";
 const inputClass =
   "w-full rounded-lg border border-line bg-cream/40 px-4 py-3 text-sm text-ink placeholder:text-ink/35 focus:border-forest/40 focus:bg-white focus:outline-none focus:ring-1 focus:ring-forest/30";
 const labelClass =
-  "mb-1.5 block text-[11px] uppercase tracking-[0.18em] text-mahogany";
+  "mb-1.5 block text-[11px] uppercase tracking-[0.18em] text-forest";
 
 export default function LeadForm() {
   const router = useRouter();
