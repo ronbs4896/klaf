@@ -1,5 +1,4 @@
 import Section from "./ui/Section";
-import ScrollArt from "./ui/ScrollArt";
 
 export default function OurStory() {
   return (
@@ -20,11 +19,10 @@ export default function OurStory() {
             className="absolute -inset-3 -z-10 translate-x-3 translate-y-3 rounded-3xl bg-mahogany/10"
           />
           <div className="overflow-hidden rounded-3xl border border-line bg-white shadow-[0_40px_100px_-40px_rgba(91,70,54,0.35)]">
-            <ScrollArt
-              variant="hands"
-              label="The Klaf Project sofer at work"
-              ratio="portrait"
-              className="rounded-none border-0"
+            <img
+              src="/gallery/pexels-cottonbro-4034031.jpg"
+              alt="The Klaf Project sofer at work"
+              className="aspect-[4/5] w-full object-cover"
             />
           </div>
 
