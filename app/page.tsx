@@ -5,7 +5,7 @@ import Meaning from "@/components/Meaning";
 import HowItWorks from "@/components/HowItWorks";
 import OurStory from "@/components/OurStory";
 import Services from "@/components/Services";
-import Gallery from "@/components/Gallery";
+import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
 import DonateCTA from "@/components/DonateCTA";
@@ -24,7 +24,7 @@ export default function Home() {
         <HowItWorks />
         <OurStory />
         <Services />
-        <Gallery />
+        <About />
         <Testimonials />
         <FinalCTA />
         <DonateCTA />
