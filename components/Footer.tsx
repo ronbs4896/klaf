@@ -37,9 +37,11 @@ export default function Footer() {
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           <div>
-            <p className="h-display text-3xl text-forest sm:text-4xl">
-              Klaf<span className="mx-0.5 text-gold">·</span>Project
-            </p>
+            <img
+              src="/gallery/logo%20white%20background.png"
+              alt="Klaf Project"
+              className="h-14 w-auto sm:h-16"
+            />
             <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-ink/65">
               Bringing one of Judaism&apos;s most beautiful traditions back to
               life. Simply, warmly, and for every home.
