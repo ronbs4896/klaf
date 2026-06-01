@@ -19,7 +19,7 @@ export default function Header() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <Link href="/" className="flex items-center gap-3">
           <img
-            src="/gallery/logo_dark_background-removebg-preview.png"
+            src="/gallery/logo_white_background-removebg-preview.png"
             alt="Klaf Project"
             className="h-8 w-auto sm:h-10"
           />

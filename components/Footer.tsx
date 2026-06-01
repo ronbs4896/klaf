@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           <div>
             <img
-              src="/gallery/logo_dark_background-removebg-preview.png"
+              src="/gallery/logo_white_background-removebg-preview.png"
               alt="Klaf Project"
               className="h-14 w-auto sm:h-16"
             />
