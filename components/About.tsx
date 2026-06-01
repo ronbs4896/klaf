@@ -1,4 +1,5 @@
 import Section from "./ui/Section";
+import ScrollArt from "./ui/ScrollArt";
 
 const pillars = [
   {
@@ -18,31 +19,64 @@ const pillars = [
 export default function About() {
   return (
     <Section id="about" tone="white" className="py-24 sm:py-32">
-      <div className="reveal mx-auto max-w-3xl">
-        <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
-          About us
-        </p>
-        <h2 className="h-display mt-5 text-[2.1rem] leading-[1.08] text-ink sm:text-[2.6rem] lg:text-[3.2rem]">
-          A small team behind
-          <br />
-          <em className="italic text-forest">a quiet mission.</em>
-        </h2>
+      <div className="grid items-center gap-14 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+        <div className="reveal relative">
+          <div
+            aria-hidden
+            className="absolute -inset-3 -z-10 translate-x-3 translate-y-3 rounded-3xl bg-forest/10"
+          />
+          <div className="overflow-hidden rounded-3xl border border-line bg-cream shadow-[0_40px_100px_-40px_rgba(91,58,34,0.35)]">
+            <ScrollArt
+              variant="hands"
+              label="Klaf Project sofer at work"
+              ratio="portrait"
+              className="rounded-none border-0"
+            />
+          </div>
+
+          <div className="absolute -right-3 top-8 hidden rotate-[-2deg] rounded-2xl border border-line bg-white/95 px-4 py-3 shadow-lg backdrop-blur md:block">
+            <p className="text-[10px] uppercase tracking-[0.18em] text-forest">
+              Since 2024
+            </p>
+            <p className="h-display mt-1 text-base text-ink">A community mitzvah</p>
+          </div>
+        </div>
+
+        <div className="reveal">
+          <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
+            About us
+          </p>
+          <h2 className="h-display mt-5 text-[2.1rem] leading-[1.08] text-ink sm:text-[2.6rem] lg:text-[3rem]">
+            A small team behind
+            <br />
+            <em className="italic text-forest">a quiet mission.</em>
+          </h2>
+
+          <div className="mt-7 grid gap-5 text-[16px] leading-relaxed text-ink/75">
+            <p>
+              Klaf Project is a nonprofit initiative built by soferim,
+              volunteers, and a community of people who believe every Jewish
+              home deserves the dignity of a properly cared-for mezuzah —
+              without cost, without complication, and without judgment.
+            </p>
+            <p>
+              We are not affiliated with a synagogue, a movement, or a
+              denomination. We simply bring the work of the sofer to the door
+              of anyone who asks.
+            </p>
+          </div>
+
+          <a
+            href="#book"
+            className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-forest hover:text-forest-hover"
+          >
+            Schedule a visit
+            <span aria-hidden>→</span>
+          </a>
+        </div>
       </div>
 
-      <div className="reveal mx-auto mt-10 grid max-w-3xl gap-5 text-[17px] leading-relaxed text-ink/75">
-        <p>
-          Klaf Project is a nonprofit initiative built by soferim, volunteers,
-          and a community of people who believe every Jewish home deserves the
-          dignity of a properly cared-for mezuzah — without cost, without
-          complication, and without judgment.
-        </p>
-        <p>
-          We are not affiliated with a synagogue, a movement, or a denomination.
-          We simply bring the work of the sofer to the door of anyone who asks.
-        </p>
-      </div>
-
-      <ul className="reveal mt-16 grid gap-5 md:grid-cols-3">
+      <ul className="reveal mt-20 grid gap-5 md:grid-cols-3">
         {pillars.map((pillar, i) => (
           <li
             key={pillar.title}
@@ -62,7 +96,7 @@ export default function About() {
         ))}
       </ul>
 
-      <div className="reveal mt-16 grid gap-6 rounded-3xl border border-line bg-cream/60 px-8 py-10 text-center sm:grid-cols-3 sm:px-12">
+      <div className="reveal mt-12 grid gap-6 rounded-3xl border border-line bg-cream/60 px-8 py-10 text-center sm:grid-cols-3 sm:px-12">
         <div>
           <p className="h-display text-3xl text-forest sm:text-4xl">2,000+</p>
           <p className="mt-2 text-[11px] uppercase tracking-[0.22em] text-ink/55">
