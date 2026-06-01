@@ -17,10 +17,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/70 bg-cream/85 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-        <Link href="/" className="flex items-baseline gap-3">
-          <span className="h-display text-xl tracking-tight text-forest sm:text-2xl">
-            Klaf<span className="mx-0.5 text-gold">·</span>Project
-          </span>
+        <Link href="/" className="flex items-center gap-3">
+          <img
+            src="/gallery/logo%20white%20background.png"
+            alt="Klaf Project"
+            className="h-8 w-auto sm:h-10"
+          />
           <span className="hidden text-[11px] uppercase tracking-[0.2em] text-forest sm:inline">
             A nonprofit initiative
           </span>
