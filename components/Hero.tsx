@@ -74,11 +74,10 @@ export default function Hero() {
               className="absolute -inset-3 -z-10 translate-x-3 translate-y-3 rounded-3xl bg-mahogany/10"
             />
             <div className="relative overflow-hidden rounded-3xl border border-line/70 bg-white shadow-[0_40px_100px_-40px_rgba(91,70,54,0.45)]">
-              <ScrollArt
-                variant="scroll"
-                label="A mezuzah scroll opened at home by a certified sofer"
-                ratio="portrait"
-                className="rounded-none border-0"
+              <img
+                src="/gallery/mezuzah-hero.png"
+                alt="A mezuzah scroll opened at home by a certified sofer"
+                className="aspect-[4/5] w-full object-cover"
               />
             </div>
 
