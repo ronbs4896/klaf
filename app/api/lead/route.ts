@@ -4,7 +4,7 @@ type LeadPayload = {
   name?: string;
   phone?: string;
   email?: string;
-  city?: string;
+  address?: string;
   state?: string;
   mezuzot?: string;
   preferredTime?: string;
@@ -14,7 +14,7 @@ type LeadPayload = {
 export async function POST(req: NextRequest) {
   const body = (await req.json().catch(() => null)) as LeadPayload | null;
 
-  if (!body || !body.name || !body.phone || !body.city || !body.state) {
+  if (!body || !body.name || !body.phone || !body.address || !body.state) {
     return NextResponse.json(
       { ok: false, error: "Missing required fields" },
       { status: 400 }

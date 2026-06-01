@@ -84,15 +84,15 @@ export default function LeadForm() {
           />
         </div>
         <div>
-          <label className={labelClass} htmlFor="city">
-            City / Neighborhood
+          <label className={labelClass} htmlFor="address">
+            Address
           </label>
           <input
-            id="city"
-            name="city"
+            id="address"
+            name="address"
             required
             className={inputClass}
-            placeholder="Brooklyn"
+            placeholder="123 Main St, Brooklyn"
           />
         </div>
         <div>
