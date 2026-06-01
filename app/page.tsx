@@ -20,8 +20,8 @@ export default function Home() {
         <Hero />
         <PullQuote />
         <Meaning />
-        <HowItWorks />
         <OurStory />
+        <HowItWorks />
         <About />
         <Testimonials />
         <FinalCTA />
