@@ -4,7 +4,6 @@ import PullQuote from "@/components/PullQuote";
 import Meaning from "@/components/Meaning";
 import HowItWorks from "@/components/HowItWorks";
 import OurStory from "@/components/OurStory";
-import Services from "@/components/Services";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
@@ -23,7 +22,6 @@ export default function Home() {
         <Meaning />
         <HowItWorks />
         <OurStory />
-        <Services />
         <About />
         <Testimonials />
         <FinalCTA />
