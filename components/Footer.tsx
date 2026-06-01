@@ -33,7 +33,7 @@ const linkGroups = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-line bg-cream pb-24 pt-16 sm:pb-16">
+    <footer className="border-t border-line bg-cream pb-16 pt-12 sm:pb-12">
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           <div>

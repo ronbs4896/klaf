@@ -17,7 +17,7 @@ const cards = [
 
 export default function Meaning() {
   return (
-    <Section id="meaning" tone="cream" className="py-24 sm:py-32">
+    <Section id="meaning" tone="cream" className="py-16 sm:py-20">
       <div className="reveal mx-auto max-w-3xl">
         <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
           The meaning behind it
@@ -47,7 +47,7 @@ export default function Meaning() {
         </p>
       </div>
 
-      <ul className="reveal mt-16 grid gap-5 md:grid-cols-3">
+      <ul className="reveal mt-12 grid gap-5 md:grid-cols-3">
         {cards.map((card, i) => (
           <li
             key={card.title}

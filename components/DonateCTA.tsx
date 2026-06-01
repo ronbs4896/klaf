@@ -36,7 +36,7 @@ export default function DonateCTA() {
   }
 
   return (
-    <Section id="donate" tone="cream" className="py-24 sm:py-32">
+    <Section id="donate" tone="cream" className="py-16 sm:py-20">
       <div className="reveal relative mx-auto max-w-4xl overflow-hidden rounded-[2rem] border border-line bg-white px-8 py-14 sm:px-14 sm:py-20">
         <div
           aria-hidden

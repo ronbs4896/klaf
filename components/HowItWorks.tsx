@@ -32,7 +32,7 @@ const promises = [
 
 export default function HowItWorks() {
   return (
-    <Section id="how" tone="white" className="py-24 sm:py-32">
+    <Section id="how" tone="white" className="py-16 sm:py-20">
       <div className="reveal mx-auto max-w-3xl">
         <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
           We come to you
@@ -64,7 +64,7 @@ export default function HowItWorks() {
         ))}
       </ol>
 
-      <div className="reveal mt-16 grid items-center gap-10 rounded-3xl border border-line bg-cream/50 px-7 py-10 lg:grid-cols-[1fr_1.1fr] lg:gap-14 lg:px-12">
+      <div className="reveal mt-12 grid items-center gap-10 rounded-3xl border border-line bg-cream/50 px-7 py-10 lg:grid-cols-[1fr_1.1fr] lg:gap-14 lg:px-12">
         <figure>
           <p className="h-display text-[1.6rem] leading-[1.25] text-ink sm:text-[1.9rem]">
             <span className="text-gold">“</span>The scribe comes to you.
