@@ -75,7 +75,7 @@ export default function Hero() {
             />
             <div className="relative overflow-hidden rounded-3xl border border-line/70 bg-white shadow-[0_40px_100px_-40px_rgba(91,70,54,0.45)]">
               <img
-                src="/gallery/mezuzah-hero.png"
+                src="/gallery/mezuzah%20hero.jpg"
                 alt="A mezuzah scroll opened at home by a certified sofer"
                 className="aspect-[4/5] w-full object-cover"
               />
