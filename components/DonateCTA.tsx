@@ -45,7 +45,7 @@ export default function DonateCTA() {
 
         <div className="relative grid items-center gap-10 lg:grid-cols-[1.2fr_1fr]">
           <div>
-            <p className="text-[11px] uppercase tracking-[0.24em] text-mahogany">
+            <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
               For those who wish to give back
             </p>
             <h2 className="h-display mt-5 text-[2rem] leading-[1.08] text-ink sm:text-[2.4rem] lg:text-[2.8rem]">
@@ -71,7 +71,7 @@ export default function DonateCTA() {
                 →
               </span>
             </button>
-            <p className="mt-4 text-center text-[11px] uppercase tracking-[0.18em] text-mahogany/70 lg:text-right">
+            <p className="mt-4 text-center text-[11px] uppercase tracking-[0.18em] text-forest/70 lg:text-right">
               Tax-deductible · 100% to the mission
             </p>
           </div>
@@ -111,7 +111,7 @@ export default function DonateCTA() {
 
             {!submitted ? (
               <form onSubmit={onSubmit} className="relative px-8 pb-8 pt-10">
-                <p className="text-[11px] uppercase tracking-[0.24em] text-mahogany">
+                <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
                   Support the project
                 </p>
                 <h3 id="donate-modal-title" className="h-display mt-3 text-2xl text-ink">
@@ -155,7 +155,7 @@ export default function DonateCTA() {
                   Send my donation
                   <span aria-hidden>→</span>
                 </button>
-                <p className="mt-3 text-center text-[11px] uppercase tracking-[0.18em] text-mahogany/60">
+                <p className="mt-3 text-center text-[11px] uppercase tracking-[0.18em] text-forest/60">
                   Tax-deductible · 100% to the mission
                 </p>
               </form>

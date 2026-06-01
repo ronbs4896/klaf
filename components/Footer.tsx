@@ -44,7 +44,7 @@ export default function Footer() {
               Bringing one of Judaism&apos;s most beautiful traditions back to
               life. Simply, warmly, and for every home.
             </p>
-            <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-mahogany/15 bg-white/70 py-1 pl-1 pr-3 text-[10px] uppercase tracking-[0.18em] text-mahogany">
+            <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-forest/15 bg-white/70 py-1 pl-1 pr-3 text-[10px] uppercase tracking-[0.18em] text-forest">
               <span className="rounded-full bg-mahogany px-2 py-0.5 text-cream">
                 Nonprofit
               </span>
@@ -54,7 +54,7 @@ export default function Footer() {
           <div className="grid gap-8 sm:grid-cols-3">
             {linkGroups.map((group) => (
               <div key={group.title}>
-                <p className="text-[10px] uppercase tracking-[0.22em] text-mahogany">
+                <p className="text-[10px] uppercase tracking-[0.22em] text-forest">
                   {group.title}
                 </p>
                 <ul className="mt-4 space-y-2.5">

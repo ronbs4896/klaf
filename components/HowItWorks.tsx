@@ -34,7 +34,7 @@ export default function HowItWorks() {
   return (
     <Section id="how" tone="white" className="py-24 sm:py-32">
       <div className="reveal mx-auto max-w-3xl">
-        <p className="text-[11px] uppercase tracking-[0.24em] text-mahogany">
+        <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
           We come to you
         </p>
         <h2 className="h-display mt-5 text-[2.1rem] leading-[1.08] text-ink sm:text-[2.6rem] lg:text-[3.2rem]">
@@ -51,7 +51,7 @@ export default function HowItWorks() {
         {steps.map((step) => (
           <li
             key={step.n}
-            className="group flex h-full flex-col rounded-3xl border border-line bg-cream/40 p-6 transition hover:-translate-y-1 hover:border-mahogany/30 hover:bg-white hover:shadow-xl"
+            className="group flex h-full flex-col rounded-3xl border border-line bg-cream/40 p-6 transition hover:-translate-y-1 hover:border-forest/30 hover:bg-white hover:shadow-xl"
           >
             <span className="h-display text-4xl leading-none text-gold">
               {step.n}

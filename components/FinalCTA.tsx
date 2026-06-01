@@ -25,7 +25,7 @@ export default function FinalCTA() {
 
       <div className="relative grid gap-12 lg:grid-cols-[1fr_1.05fr] lg:items-center lg:gap-16">
         <div className="reveal">
-          <p className="text-[11px] uppercase tracking-[0.24em] text-mahogany">
+          <p className="text-[11px] uppercase tracking-[0.24em] text-forest">
             Book a Visit
           </p>
           <h2 className="h-display mt-5 text-[2.1rem] leading-[1.06] text-ink sm:text-[2.6rem] lg:text-[3.3rem]">

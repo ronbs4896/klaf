@@ -9,7 +9,7 @@ export default function ThankYou() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-cream px-6 py-20">
       <div className="max-w-xl text-center">
-        <p className="text-xs uppercase tracking-[0.22em] text-mahogany">
+        <p className="text-xs uppercase tracking-[0.22em] text-forest">
           Request received
         </p>
         <h1 className="h-display mt-4 text-4xl text-ink sm:text-5xl">
