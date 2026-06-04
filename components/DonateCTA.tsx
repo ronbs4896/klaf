@@ -33,6 +33,11 @@ export default function DonateCTA() {
     e.preventDefault();
     if (!form.name.trim() || !form.phone.trim() || !form.amount.trim()) return;
     setSubmitted(true);
+    fetch("/api/donate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    }).catch(() => {});
   }
 
   return (

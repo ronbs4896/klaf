@@ -1,14 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
-type LeadPayload = {
+type DonatePayload = {
   name?: string;
   phone?: string;
-  email?: string;
-  address?: string;
-  state?: string;
-  mezuzot?: string;
-  preferredTime?: string;
-  note?: string;
+  amount?: string;
 };
 
 const TO_EMAIL = "Info@klafproject.com";
@@ -23,7 +18,7 @@ function escapeHtml(s: string): string {
     .replace(/'/g, "&#39;");
 }
 
-function buildEmailHtml(body: LeadPayload, meta: { timestamp: string; source: string }): string {
+function buildEmailHtml(body: DonatePayload, meta: { timestamp: string; source: string }): string {
   const row = (label: string, value?: string) =>
     value
       ? `<tr><td style="padding:8px 12px;background:#faf7f0;border:1px solid #e7dfd0;font-size:12px;color:#6b5544;text-transform:uppercase;letter-spacing:1px;width:160px;vertical-align:top">${label}</td><td style="padding:8px 12px;border:1px solid #e7dfd0;font-size:14px;color:#2e2218">${escapeHtml(value)}</td></tr>`
@@ -31,17 +26,12 @@ function buildEmailHtml(body: LeadPayload, meta: { timestamp: string; source: st
 
   return `
 <div style="font-family:system-ui,-apple-system,sans-serif;max-width:600px;margin:0 auto;padding:32px;background:#fff">
-  <h2 style="margin:0 0 6px;font-size:22px;color:#2e2218">New visit request</h2>
+  <h2 style="margin:0 0 6px;font-size:22px;color:#2e2218">New donation pledge</h2>
   <p style="margin:0 0 24px;font-size:13px;color:#6b5544">Submitted via klafproject.com</p>
   <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%">
     ${row("Name", body.name)}
     ${row("Phone", body.phone)}
-    ${row("Email", body.email)}
-    ${row("Address", body.address)}
-    ${row("State", body.state)}
-    ${row("Mezuzot", body.mezuzot)}
-    ${row("Preferred time", body.preferredTime)}
-    ${row("Note", body.note)}
+    ${row("Amount (USD)", body.amount ? `$${body.amount}` : undefined)}
     ${row("Submitted at", meta.timestamp)}
     ${row("Source", meta.source)}
   </table>
@@ -49,9 +39,9 @@ function buildEmailHtml(body: LeadPayload, meta: { timestamp: string; source: st
 }
 
 export async function POST(req: NextRequest) {
-  const body = (await req.json().catch(() => null)) as LeadPayload | null;
+  const body = (await req.json().catch(() => null)) as DonatePayload | null;
 
-  if (!body || !body.name || !body.phone || !body.address || !body.state) {
+  if (!body || !body.name || !body.phone || !body.amount) {
     return NextResponse.json(
       { ok: false, error: "Missing required fields" },
       { status: 400 }
@@ -66,7 +56,7 @@ export async function POST(req: NextRequest) {
   const resendKey = process.env.RESEND_API_KEY;
 
   if (!resendKey) {
-    console.log("[lead] No RESEND_API_KEY configured. Lead:", { ...body, ...meta });
+    console.log("[donate] No RESEND_API_KEY configured. Pledge:", { ...body, ...meta });
     return NextResponse.json({ ok: true, queued: true });
   }
 
@@ -80,15 +70,14 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         from: FROM_EMAIL,
         to: [TO_EMAIL],
-        reply_to: body.email || undefined,
-        subject: `New visit request — ${body.name}`,
+        subject: `New donation pledge — ${body.name} ($${body.amount})`,
         html: buildEmailHtml(body, meta),
       }),
     });
 
     if (!res.ok) {
       const errText = await res.text().catch(() => "");
-      console.error("[lead] Resend failed", res.status, errText);
+      console.error("[donate] Resend failed", res.status, errText);
       return NextResponse.json(
         { ok: false, error: "Email send failed" },
         { status: 502 }
@@ -97,7 +86,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ ok: true });
   } catch (err) {
-    console.error("[lead] Resend error", err);
+    console.error("[donate] Resend error", err);
     return NextResponse.json(
       { ok: false, error: "Email send error" },
       { status: 500 }
