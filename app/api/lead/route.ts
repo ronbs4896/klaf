@@ -11,7 +11,7 @@ type LeadPayload = {
   note?: string;
 };
 
-const TO_EMAIL = "Info@klafproject.com";
+const TO_EMAIL = process.env.LEAD_TO_EMAIL || "Info@klafproject.com";
 const FROM_EMAIL = process.env.RESEND_FROM || "Klaf Project <onboarding@resend.dev>";
 
 function escapeHtml(s: string): string {
