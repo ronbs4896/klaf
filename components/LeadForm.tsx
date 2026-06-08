@@ -83,7 +83,7 @@ export default function LeadForm() {
             placeholder="you@example.com"
           />
         </div>
-        <div>
+        <div className="sm:col-span-2">
           <label className={labelClass} htmlFor="address">
             Address
           </label>
@@ -91,8 +91,22 @@ export default function LeadForm() {
             id="address"
             name="address"
             required
+            autoComplete="street-address"
             className={inputClass}
-            placeholder="123 Main St, Brooklyn"
+            placeholder="123 Main St"
+          />
+        </div>
+        <div>
+          <label className={labelClass} htmlFor="city">
+            City
+          </label>
+          <input
+            id="city"
+            name="city"
+            required
+            autoComplete="address-level2"
+            className={inputClass}
+            placeholder="Brooklyn"
           />
         </div>
         <div>
@@ -103,6 +117,7 @@ export default function LeadForm() {
             id="state"
             name="state"
             required
+            autoComplete="address-level1"
             className={inputClass}
             placeholder="NY"
           />
