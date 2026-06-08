@@ -5,6 +5,7 @@ type LeadPayload = {
   phone?: string;
   email?: string;
   address?: string;
+  city?: string;
   state?: string;
   mezuzot?: string;
   preferredTime?: string;
@@ -38,6 +39,7 @@ function buildEmailHtml(body: LeadPayload, meta: { timestamp: string; source: st
     ${row("Phone", body.phone)}
     ${row("Email", body.email)}
     ${row("Address", body.address)}
+    ${row("City", body.city)}
     ${row("State", body.state)}
     ${row("Mezuzot", body.mezuzot)}
     ${row("Preferred time", body.preferredTime)}
@@ -51,7 +53,7 @@ function buildEmailHtml(body: LeadPayload, meta: { timestamp: string; source: st
 export async function POST(req: NextRequest) {
   const body = (await req.json().catch(() => null)) as LeadPayload | null;
 
-  if (!body || !body.name || !body.phone || !body.address || !body.state) {
+  if (!body || !body.name || !body.phone || !body.address || !body.city || !body.state) {
     return NextResponse.json(
       { ok: false, error: "Missing required fields" },
       { status: 400 }
