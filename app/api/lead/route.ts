@@ -53,7 +53,18 @@ function buildEmailHtml(body: LeadPayload, meta: { timestamp: string; source: st
 export async function POST(req: NextRequest) {
   const body = (await req.json().catch(() => null)) as LeadPayload | null;
 
-  if (!body || !body.name || !body.phone || !body.address || !body.city || !body.state) {
+  if (
+    !body ||
+    !body.name ||
+    !body.phone ||
+    !body.email ||
+    !body.address ||
+    !body.city ||
+    !body.state ||
+    !body.mezuzot ||
+    !body.preferredTime ||
+    !body.note
+  ) {
     return NextResponse.json(
       { ok: false, error: "Missing required fields" },
       { status: 400 }

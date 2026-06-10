@@ -40,7 +40,6 @@ export default function LeadForm() {
     <form
       onSubmit={onSubmit}
       className="rounded-2xl border border-line bg-white p-6 shadow-[0_30px_80px_-40px_rgba(91,70,54,0.25)] sm:p-8"
-      noValidate
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="sm:col-span-2">
@@ -77,6 +76,7 @@ export default function LeadForm() {
           <input
             id="email"
             name="email"
+            required
             type="email"
             autoComplete="email"
             className={inputClass}
@@ -129,6 +129,7 @@ export default function LeadForm() {
           <input
             id="mezuzot"
             name="mezuzot"
+            required
             type="number"
             min={1}
             className={inputClass}
@@ -142,6 +143,7 @@ export default function LeadForm() {
           <select
             id="preferredTime"
             name="preferredTime"
+            required
             className={inputClass}
             defaultValue=""
           >
@@ -156,11 +158,12 @@ export default function LeadForm() {
         </div>
         <div className="sm:col-span-2">
           <label className={labelClass} htmlFor="note">
-            Optional note
+            Note
           </label>
           <textarea
             id="note"
             name="note"
+            required
             rows={3}
             className={`${inputClass} resize-none`}
             placeholder="Anything we should know before the visit?"
