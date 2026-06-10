@@ -20,7 +20,7 @@ export default function OurStory() {
           />
           <div className="overflow-hidden rounded-3xl border border-line bg-white shadow-[0_40px_100px_-40px_rgba(91,70,54,0.35)]">
             <img
-              src="/gallery/bdd7ebf3-bf14-4ca6-8735-efee05dc1287.png"
+              src="/gallery/ChatGPT%20Image%20Jun%2010,%202026,%2006_32_40%20PM.png"
               alt="The Klaf Project sofer at work"
               className="aspect-[4/5] w-full object-cover"
             />
