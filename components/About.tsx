@@ -35,7 +35,7 @@ export default function About() {
         <div className="reveal relative">
           <div className="relative overflow-hidden rounded-3xl border border-line bg-cream shadow-[0_50px_120px_-40px_rgba(91,58,34,0.4)]">
             <img
-              src="/gallery/rabbi.png"
+              src="/gallery/ac971c94-f179-41f2-996a-bc4cd2ff579f.png"
               alt="Rabbi Rachamim Yosef Yitzchak — Licensed Sofer STaM"
               className="aspect-[4/5] w-full object-cover"
             />
